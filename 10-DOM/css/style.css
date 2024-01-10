@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background-color: rgb(75, 89, 182);
+	margin: auto;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 1000px;
+	color: rgb(199, 209, 245);
+}
+
+header{
+	padding-top : 1%;
+}
+
+footer{
+	padding-top: 1%;
+}
+
+input{
+	padding: 1%;
+	width: 16.3%;
+}
+
+p{
+	text-align: justify;
+}
+
+h1{
+	text-align: center;
+	font-size: 3em;
+}
+
+main {
+	padding: 1%;
+	border: 5px groove rgb(4, 5, 54);
+}

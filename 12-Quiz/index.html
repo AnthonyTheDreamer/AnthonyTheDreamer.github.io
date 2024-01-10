@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Test your knowledge</title>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="img/icon.ico">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
+	</head>
+	<body>
+		<div id = "body">
+			<div id = "door">
+				<img src = "img/doorclose.png" alt = "door">
+			</div>
+			<div id = "start">
+				<h1>Test your knowledge.</h1>
+				<img src = "img/start.png" alt="start" onclick="start()">
+			</div>
+			<div id = "score">
+				<p id = "score"></p>
+				<img src = "img/star0.png" alt = "star0" width = 10%>
+				<img id = "star1" src = "img/star1.png" alt = "star1" width = 10%>
+				<img id = "star2" src = "img/star2.png" alt = "star2" width = 10%>
+				<img id = "star3" src = "img/star3.png" alt = "star3" width = 10%>
+				<img id = "star4" src = "img/star4.png" alt = "star4" width = 10%>
+				<img id = "star5" src = "img/star5.png" alt = "star5" width = 10%>
+			</div>
+			<div id = "quiz">
+				<div id = quests>
+				<p id = "question"></p>
+				<div class= "answer" id = "one">
+				<p id = "answer1" onclick=theanswer(this)></p>
+				</div>
+				<div class= "answer" id = "two">
+				<p id = "answer2" onclick=theanswer(this)></p>
+				</div>
+				<div class= "answer" id = "three">
+				<p id = "answer3" onclick=theanswer(this)></p>
+				</div>
+				<div class= "answer" id = "four">
+				<p id = "answer4" onclick=theanswer(this)></p>
+				</div>
+				</div>
+			</div>
+			<div id = "lose">
+				<h1>You are not worthy!</h1>
+			</div>
+			<div id = "again">
+				<img src = "img/again.png" onclick = "again()">
+			</div>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>

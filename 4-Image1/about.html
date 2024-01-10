@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Welcome to Velvet Room</title>
+		<meta charset="utf-8"/>
+		<link rel="icon" type="image/png" href="img/icon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/style2.css">
+
+	</head>
+	<body>
+		<audio id="hoveraudio" src="music/hover.mp3" type="audio/mpeg"></audio>
+		<audio id="clickaudio" src="music/click.mp3" type="audio/mpeg"></audio>
+		<audio autoplay loop  id="audio" src="music/background2.mp3" type="audio/mp3"/></audio>
+		
+		<script>
+			function playSound(hoveraudio) {
+				var audio1=document.getElementById(hoveraudio);
+				audio1.play();
+			}
+
+			function stopSound(hoveraudio) {
+				var audio1=document.getElementById(hoveraudio);
+				audio1.pause();
+				audio1.currentTime = 0;
+			}
+
+			function play(clickaudio) {
+				var audio2=document.getElementById(clickaudio);
+				audio2.play();
+			}
+		</script>
+
+		<div id="body">
+			<div id="menu">
+			<a href="index.html" onmouseenter="playSound('hoveraudio')" onmouseout="stopSound('hoveraudio')" onclick="play('clickaudio')">Home</a>
+			<a href="about.html" id="active" onmouseenter="playSound('hoveraudio')" onmouseout="stopSound('hoveraudio')" onclick="play('clickaudio')">About</a>
+			<a id="playpause" onmouseenter="playSound('hoveraudio')" onmouseout="stopSound('hoveraudio')" onclick="play('clickaudio')">♫</a>
+			<script>
+				document.getElementById("playpause").onclick = function() {
+					var audio = document.getElementById("audio");
+					if (audio.paused) audio.play();
+					else audio.pause();
+				};
+			</script>
+			</div>
+			<div id="content">
+				<br></br>
+				<br></br>
+				<p style="opacity: 0.5">Why are you here?</p>
+			</div>
+		</div>
+			</div>
+				

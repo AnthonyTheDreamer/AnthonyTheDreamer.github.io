@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Persona 3: Dancing Moon Night</title>
+		<meta charset="utf-8"/>
+		<link rel="icon" type="image/png" href="img/icon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	</head>
+	<body>
+		<audio id="hoveraudio" src="music/hover.mp3" type="audio/mpeg"></audio>
+		<audio id="clickaudio" src="music/click.mp3" type="audio/mpeg"></audio>
+		<audio autoplay loop id="audio" autoplay src="music/background.mp3" type="audio/mp3"/></audio>
+		<script>
+			function playSound(hoveraudio) {
+				var audio1=document.getElementById(hoveraudio);
+				audio1.play();
+			}
+
+			function stopSound(hoveraudio) {
+				var audio1=document.getElementById(hoveraudio);
+				audio1.pause();
+				audio1.currentTime = 0;
+			}
+
+			function play(clickaudio) {
+				var audio2=document.getElementById(clickaudio);
+				audio2.play();
+			}
+		</script>
+
+		<div id="body">
+			<div id="bannercontent">
+				<div id="banner">
+					<img src="img/banner.png" alt="Banner" title="Banner" class="cursor" onmouseenter="playSound('hoveraudio')" onmouseout="stopSound('hoveraudio')" onclick="play('clickaudio')" id="playpause3"/>
+					<script>
+							document.getElementById("playpause3").onclick = function() {
+						    var audio = document.getElementById("audio");
+						    if (audio.paused) audio.play();
+						    else audio.pause();
+						};
+					</script>
+				</div>
+			</div>
+				
+			<div id="content">
+				<div id="menu">
+					<div id="logo">
+						<img class="cursor" onmouseenter="playSound('hoveraudio')" onmouseout="stopSound('hoveraudio')" onclick="play('clickaudio')" src="img/logo.png" alt="logo" title="Click me toemlay/pause music!!!" id="playpause"/>
+						<script>
+							document.getElementById("playpause").onclick = function() {
+						    var audio = document.getElementById("audio");
+						    if (audio.paused) audio.play();
+						    else audio.pause();
+						};
+						</script>
+					</div>
+					<div id="menucontent">
+						<a href="index.html" id="active" onmouseenter="playSound('hoveraudio')" onmouseout="stopSound('hoveraudio')" onclick="play('clickaudio')">Home</a>
+						<a href="http://conganh176.github.io/BT19/index.html" onmouseenter="playSound('hoveraudio')" onmouseout="stopSound('hoveraudio')" onclick="play('clickaudio')">About</a>
+						<a class="cursor" id="playpause2" onmouseenter="playSound('hoveraudio')" onmouseout="stopSound('hoveraudio')" onclick="play('clickaudio')">♫</a>
+						<script>
+							document.getElementById("playpause2").onclick = function() {
+						    var audio = document.getElementById("audio");
+						    if (audio.paused) audio.play();
+						    else audio.pause();
+						};
+						</script>
+					</div>
+
+
+				</div>
+				
+				<div id="imagecontent">
+					<div class="image">
+					<img src="img/1.png" alt="Minato Arisato" title="Minato Arisato" onmouseenter="playSound('hoveraudio')" onmouseout="stopSound('hoveraudio')" onclick="play('clickaudio')">
+					</div>
+
+					<div class="image">
+					<img src="img/2.png" alt="Yukari Takeba" title="Yukari Takeba" onmouseenter="playSound('hoveraudio')" onmouseout="stopSound('hoveraudio')" onclick="play('clickaudio')">
+					</div>
+
+					<div class="image">
+					<img src="img/3.png" alt="Junpei Iori" title="Junpei Iori" onmouseenter="playSound('hoveraudio')" onmouseout="stopSound('hoveraudio')" onclick="play('clickaudio')">
+					</div>
+
+					<div class="image">
+					<img src="img/4.png" alt="Mitsuru Kirijo" title="Mitsuru Kirijo" onmouseenter="playSound('hoveraudio')" onmouseout="stopSound('hoveraudio')" onclick="play('clickaudio')">
+					</div>
+
+					<div class="image">
+					<img src="img/5.png" alt="Akihiko Sanada" title="Akihiko Sanada" onmouseenter="playSound('hoveraudio')" onmouseout="stopSound('hoveraudio')" onclick="play('clickaudio')">
+					</div>
+
+					<div class="image">
+					<img src="img/6.png" alt="Fuuka Yamagishi" title="Fuuka Yamagishi" onmouseenter="playSound('hoveraudio')" onmouseout="stopSound('hoveraudio')" onclick="play('clickaudio')">
+					</div>			
+
+					<div class="image">
+					<img src="img/7.png" alt="Aigis" title="Aigis" onmouseenter="playSound('hoveraudio')" onmouseout="stopSound('hoveraudio')" onclick="play('clickaudio')">
+					</div>
+
+					<div class="image">
+					<img src="img/8.png" alt="Ken Amada" title="Ken Amada" onmouseenter="playSound('hoveraudio')" onmouseout="stopSound('hoveraudio')" onclick="play('clickaudio')">
+					</div>
+
+					<div class="image">
+					<img src="img/9.png" alt="Shinjiro Aragaki" title="Shinjiro Aragaki" onmouseenter="playSound('hoveraudio')" onmouseout="stopSound('hoveraudio')" onclick="play('clickaudio')">
+					</div>
+
+					<div class="image">
+					<img src="img/10.png" alt="Elizabeth" title="Elizabeth" onmouseenter="playSound('hoveraudio')" onmouseout="stopSound('hoveraudio')" onclick="play('clickaudio')">
+					</div>
+				</div>
+			</div>
+			<div id="top">
+				<a href="index.html#bannercontent">
+				<img src="img/top.png" alt="top" title="Back to Top" onmouseenter="playSound('hoveraudio')" onmouseout="stopSound('hoveraudio')" onclick="play('clickaudio')">
+				</a>
+			</div>
+		</div>
+	</body>
+</html>

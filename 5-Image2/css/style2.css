@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+	background-color: rgb(13, 120, 222);
+	margin: 0;
+	background-image: url("../img/background4.jpg");
+	background-size: cover;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#content{
+		max-width: 1000px;
+		margin: auto;
+		position: relative;
+}
+
+#menu{
+		background-color: rgb(13, 120, 222);
+		width: 20%;
+		max-width: 200px;
+		height: 15vw;
+		position: fixed;
+		top: 175px;
+		border: 5px solid rgb(241, 249, 250);
+		filter: brightness(80%);
+}
+
+#menucontent{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		top: 0;
+		bottom: 0;
+		margin-top: auto;
+		margin-bottom: auto;
+}
+
+#menucontent a{
+		display: block;
+		font-size: 2vw;
+		text-decoration: none;
+		color: rgb(2, 54, 88);
+		background-color: rgb(13, 120, 222);
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		filter: brightness(100%);
+		text-align: center;
+}
+
+#menucontent a:hover{
+			background-color: rgb(2, 54, 88);
+			color: rgb(241, 249, 250);
+
+}
+
+#menucontent a:active{
+			background-color: rgb(2, 54, 88);
+			color: rgb(241, 249, 250);
+			filter: brightness(150%);
+}
+
+#menucontent a#active{
+			background-color: rgb(2, 54, 88);
+			color: rgb(241, 249, 250);
+			filter: brightness(150%);
+}
+
+#imagecontent{
+			position: absolute;
+			right: 0;
+			width: 80%;
+}
+
+#imagecontent img{
+			position: absolute;
+			right: 0;
+			left: 0;
+			top: 175px;
+			margin: auto;
+			max-width: 40%;
+			filter: brightness(80%);
+}
+
+#name{
+		color: rgb(90, 27, 26);
+		padding-top: 25px;
+		text-transform: uppercase;
+}
+
+#textcontent{
+			max-width: 1000px;
+			position: fixed;
+			background-color: rgb(164, 176, 182);
+			height: 150px;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 50%;
+			bottom: 20%;
+			font-weight: bold;
+			padding-left: 10%;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			font-size: 1.1em;
+			color: rgb(62, 74, 81);
+			border: 5px solid rgb(170, 185, 201);
+}
+
+.cursor{
+		cursor: pointer
+}
+

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="img/icon.ico">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class = "body">
+			<div class = "top">
+				<p class = "head">CASINO</p>
+			</div>
+			<div id = "theme">
+					<span id = "spantext" style = "font-weight: bold">Change theme</span><br/>
+					<label class="switch">
+  						<input id ="checkbox" type="checkbox" onclick="theme()">
+  						<span class="slider"></span>
+					</label>
+			</div>
+			<form name="calculator">
+			<div class = "screen">
+				<div class = "screenborder">
+				<input class="display" type="text" id="math"> <br>
+                <input class="display" type="text" id="result" disabled">
+            	</div>
+			</div>
+			
+			<div class = "buttons">
+				
+				<input class="key yellow" onclick="pow()" type="button" value="x&sup2;">
+				<input class="key yellow" onclick="sqrt()" type="button" value="&radic;">
+				<input class="key yellow" onclick="factorial()" type="button" value="!">
+				<input class="key yellow" onclick="percentage()" type="button" value="%">
+				<input class="key yellow" onclick="backspace()" type="button" value="&#9746;">
+				<input class="key number" onclick="$('.display')[0].value += '7'" type="button" value="7">
+				<input class="key number" onclick="$('.display')[0].value += '8'" type="button" value="8">
+				<input class="key number" onclick="$('.display')[0].value += '9'" type="button" value="9">
+				<input class="key yellow" onclick="$('.display')[0].value += '('" type="button" value="(">
+				<input class="key yellow" onclick="$('.display')[0].value += ')'" type="button" value=")">
+				<input class="key number" onclick="$('.display')[0].value += '4'" type="button" value="4">
+				<input class="key number" onclick="$('.display')[0].value += '5'" type="button" value="5">
+				<input class="key number" onclick="$('.display')[0].value += '6'" type="button" value="6">
+				<input class="key yellow" onclick="$('.display')[0].value += '*'" type="button" value="*">
+				<input class="key yellow" onclick="$('.display')[0].value += '/'" type="button" value="/">
+				<input class="key number" onclick="$('.display')[0].value += '1'" type="button" value="1">
+				<input class="key number" onclick="$('.display')[0].value += '2'" type="button" value="2">
+				<input class="key number" onclick="$('.display')[0].value += '3'" type="button" value="3">
+				<input class="key yellow" onclick="$('.display')[0].value += '-'" type="button" value="-">
+				<input class="key yellow" onclick="$('.display')[0].value += '+'" type="button" value="+">
+				<input class="key" onclick="reset()" type="button" id="CE" value="CE">
+				<input class="key number" onclick="$('.display')[0].value += '0'" type="button" value="0">
+				<input class="key number" onclick="$('.display')[0].value += '.'" type="button" value=".">
+				<input class="key yellow" onclick="ans()" type="button" value="Ans">
+				<input class="key yellow" onclick="equalto()" type="button" value="=">
+			</div>
+			</form>	
+		</div>
+		<script src="js/script.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+	</body>
+</html>

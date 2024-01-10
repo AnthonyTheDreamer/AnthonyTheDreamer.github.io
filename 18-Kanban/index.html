@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Kanban Board</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="icon" type="image/png" href="img/icon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<nav>
+			    <div class="nav-wrapper">
+				    <a href="index.html" class="brand-logo center">Kanban Board</a>
+			    </div>
+			</nav>
+		</header>
+		<section class="container">
+			<div class="row">
+				
+					<div class="col m4">
+						<div class="card" id="todolist">
+							<div class="header">
+								<h5>TO DO</h5>
+							</div>
+							<div class="collection sorted-list" id="todo"></div>
+	      					<div class="input-field">
+          						<input style="height: 1em; margin-top: 0; margin-bottom: 0;font-size: 1em; width: 80%" id="new_job_todo" type="text" onkeydown="app.newJob(event, 'todo', this)"><span onclick="plus(this)"><i title="Add" class="fas fa-plus"></i></span>
+        					</div>
+						</div>
+					</div>
+					<div class="col m4">
+						<div class="card" id="doinglist">
+							<div class="header">
+								<h5>DOING</h5>
+							</div>
+							<div class="collection sorted-list" id="doing"></div>
+	      					<div class="input-field">
+          						<input style="height: 1em; margin-top: 0; margin-bottom: 0;font-size: 1em; width: 80%" id="new_job_doing" type="text" onkeydown="app.newJob(event, 'doing', this)"><span onclick="plus(this)"><i title="Add" class="fas fa-plus"></i></span>
+        					</div>
+						</div>
+					</div>
+					<div class="col m4">
+						<div class="card" id="donelist">
+							<div class="header">
+								<h5>DONE</h5>
+							</div>
+							<div class="collection sorted-list" id="done"></div>
+	      					<div class="input-field">
+          						<input style="height: 1em; margin-top: 0; margin-bottom: 0;font-size: 1em; width: 80%" id="new_job_done" type="text" onkeydown="app.newJob(event, 'done', this)"><span onclick="plus(this)"><i title="Add" class="fas fa-plus"></i></span>
+        					</div>
+        					<div class="clear"></div>
+						</div>
+					</div>
+				
+			</div>
+		</section>
+
+		<div id="modal-confirm" class="modal">
+			<div class="modal-content">
+				<h4 style="text-align: center">Confirm Remove</h4>
+				<p>Are you sure to remove this job?</p>
+			</div>
+
+			<div class="modal-footer">
+				<a href="#!" class="modal-action waves-effect waves-light btn" id="btn-delete"><i class="material-icons left">check</i>Yes</a>
+				<a href="#!" class="modal-action modal-close waves-effect waves btn" style="background-color: #E57373"><i class="material-icons left">close</i>No</a>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

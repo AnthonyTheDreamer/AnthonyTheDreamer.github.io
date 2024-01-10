@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	background-image: url("../img/background.jpg");
+	font-family: 'Pangolin', cursive;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+html {
+	width: 100%;
+    height: 100%;
+	border-right: 10px groove #966F33;
+	border-bottom: 10px groove #966F33;
+	border-left: 10px ridge #966F33;
+	border-top: 10px ridge #966F33;
+}
+
+/*body {
+	width: 100%;
+    height: 100%;
+	border: 1px solid black
+}*/
+
+section {
+	max-width: 1000px;
+	margin: auto;
+}
+
+h5 {
+	text-align: center;
+	font-weight: bold;
+	color: #383b3e;
+	cursor: default;
+}
+
+/*a {
+	text-align: justify;
+	word-break: break-all;
+}*/
+
+nav {
+	background-color: #3b653d;
+	border-bottom: 5px solid #966F33;
+}
+
+nav .brand-logo{
+	color: #e0dbd1
+}	
+
+.clear {
+	clear: both;
+}
+
+.fas {
+	float: right;
+	color: gray;
+	font-size: 1.25em;
+	cursor: pointer;
+}
+
+.fas:hover {
+	color: #383b3e
+}
+
+input {
+	font-family: 'Pangolin', cursive;
+	font-weight: bold;
+	color: #383b3e;
+}
+
+.input-field {
+	position: relative;
+	padding: 10px 20px;
+}
+
+.fa-plus {
+	position: absolute;
+	right: 20px;
+}
+
+.fa-eraser {
+	opacity: 0;
+	transition: opacity 0.25s ease-in-out;
+}
+
+.collection {
+	border-color: transparent;
+}
+
+.collection .collection-item {
+	background-color: transparent;
+	border: none;
+	text-align: justify;
+	word-break: break-all;
+	cursor: default;
+}
+
+.collection a.collection-item {
+	color: #383b3e;
+}
+
+.collection-item:hover {
+	background-color: rgba(0,0,0,0.25);
+}
+
+.card {
+	margin-top: 15%;
+	padding-top: 10%;
+	padding-bottom: 5%;
+}
+
+#todolist {
+	background-image: url("../img/pin.png");
+	background-size: 20%;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-color: rgb(202, 237, 157);
+	box-shadow: -2px 3px 3px;
+}
+
+#doinglist {
+	background-image: url("../img/pin2.png");
+	background-size: 20%;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-color: rgb(249, 235, 118);
+	box-shadow: -2px 3px 3px;
+}
+
+#donelist {
+	background-image: url("../img/pin3.png");
+	background-size: 20%;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-color: rgb(241, 199, 199);
+	box-shadow: -2px 3px 3px;
+}
+
+.ui-state-highlight {
+	background-color: rgba(0,0,0,0.1);
+	height: calc(1.5rem + 20px);
+}
+
+.card .collection .collection-item.dragging {
+	-ms-transform: rotate(5deg);
+	-webkit-transform: rotate(5deg);
+	transform: rotate(5deg);
+}
+
+.btn {
+
+}
+
+.modal-close .btn-flat {
+	background-color: #E57373;	
+}

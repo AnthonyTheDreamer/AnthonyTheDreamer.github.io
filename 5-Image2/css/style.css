@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+	background-color: rgb(13, 120, 222);
+	margin: 0;
+	background-image: url("../img/background.jpg");
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#bannercontent{
+				background-color: rgb(2, 54, 88);
+				border: 5px solid rgb(245, 245, 245);
+				background-image: url("../img/background5.png");
+				background-size: cover;
+}
+
+#banner{
+		max-width: 1000px;
+		margin: auto;
+}
+
+#banner img{
+			width: 75%;
+			display: block;
+			margin: auto;
+}
+
+#content{
+		max-width: 1000px;
+		margin: auto;
+		position: relative;
+}
+
+#menu{
+		background-color: rgb(13, 120, 222);
+		width: 20%;
+		height: 300px;
+		position: absolute;
+		border: 5px solid rgb(245, 245, 245);
+}
+
+#imagecontent{
+			position: absolute;
+			right: 0;
+			width: 80%;
+}
+
+
+#logo:hover{
+			filter: brightness(150%);
+}
+
+#logo:active{
+			filter: brightness(200%);
+}
+
+#banner img:hover, #top img:hover{
+	filter: brightness(150%);
+}
+
+#banner img:active, #top img:active{
+	filter: brightness(200%);
+}
+
+#logo img{
+		min-width: 50px;
+		max-width: 10vw;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+}
+
+#menucontent{
+		position: absolute;
+		top: 150px;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+}
+
+#menucontent a{
+		display: block;
+		font-size: 1.5em;
+		text-decoration: none;
+		color: rgb(2, 54, 88);
+		background-color: rgb(13, 120, 222);
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		filter: brightness(100%);
+		text-align: center;
+}
+
+#menucontent a:hover{
+			background-color: rgb(2, 54, 88);
+			color: rgb(241, 249, 250);
+
+}
+
+#menucontent a:active{
+			background-color: rgb(2, 54, 88);
+			color: rgb(241, 249, 250);
+			filter: brightness(150%);
+}
+
+#menucontent a#active{
+			background-color: rgb(2, 54, 88);
+			color: rgb(241, 249, 250);
+			filter: brightness(150%);
+}
+
+.image{
+		float: left;
+		height: 600px;
+		width: 50%;
+		border: 5px solid rgb(245, 245, 245);
+		background-color: rgb(12, 12, 12);
+		background-image: url("../img/light1.png"), url("../img/background2.jpg");
+		background-repeat: no-repeat, no-repeat;
+		background-position: center, bottom;
+		background-size: cover, cover;
+		position: relative;
+}
+
+.image img{
+	max-width: 300px;
+	max-height: 450px;
+	filter: brightness(10%);
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	bottom: 25px;
+	left: 0;
+	right: 0;
+	cursor: pointer
+}
+
+.image img:hover{
+					filter: brightness(100%);
+}
+
+.cursor{
+		cursor: pointer
+}
+
+#top img{
+		max-width: 10vw;
+		position: fixed;
+		bottom: 0;
+		right: 10px;
+}

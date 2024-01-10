@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url("../img/background4.jpg");
+	background-color: rgb(12, 12, 12);
+	background-size: cover;
+	background-repeat: repeat-y;
+	background-position: center top;
+	max-width: 800px;
+	margin: auto;
+}
+
+#menu a{
+		font-size: 1.5em;
+		text-decoration: none;
+		float: left;
+		margin-top: 50px;
+		margin-bottom: auto;
+		margin-left: 5vw;
+		margin-right: 5vw;
+		color: rgb(242, 242, 242);
+		border: 5px solid rgb(242, 242, 242);
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		filter: brightness(50%);
+}
+
+#menu a:hover{
+			filter: brightness(125%)
+
+}
+
+#menu a:active{
+			filter: brightness(150%);
+}
+
+#menu a#active{
+	filter: brightness(150%);
+}
+
+#content{
+			width: 100%;
+			margin: auto;
+			color: rgb(242, 242, 242);
+			font-size: 4em;
+			text-align: center;
+		}
+
+p{
+	font-size: 5vw;
+}

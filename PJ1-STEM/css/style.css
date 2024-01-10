@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	background: url(../img/background.jpg);
+	position: relative;
+	color: #383b3e;
+}
+
+ul{
+	list-style: none;
+}
+
+b{
+	color: red;
+}
+
+h2{
+	text-align: center;
+	font-size: 2em;
+}
+
+.menu{
+	position: fixed;
+	background-color: #90ee90;
+	width: 100%;
+	top: 0;
+	z-index: 2;
+	box-shadow: 0px 1px 1px black;
+}
+
+.menucontent{
+	max-width: 1000px;
+	margin: auto;
+	position: relative;
+}
+
+.menucontent img{
+	max-width: 150px;
+	filter: brightness(100%);
+}
+
+.menucontent img:hover{
+	filter: saturate(150%);
+}
+
+.menulist{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.menulist a{
+	padding: 15px;
+	display: inline-block;
+	font-size: 1.5em;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	-webkit-text-stroke-color: #383b3e;
+    -webkit-text-stroke-width: 1px;
+    -moz-text-stroke-color: #383b3e;
+    -moz-text-stroke-width: 1px;  
+	transition: transform 0.25s ease-in-out, text-shadow 0.25s ease-in-out
+}
+
+.menulist a:hover{
+	transform: translateY(-5px);
+	text-shadow: 0px 5px gray;
+}
+
+.menulist a:active{
+	filter: brightness(125%);
+}
+
+.banner img{
+	margin-top: 88px;
+	width: 100%;
+	display:block;
+}
+
+.content{
+	max-width: 1000px;
+	margin: auto;
+}
+
+#event{
+
+	background-color: rgb(244, 244, 176);
+	background-image: url(../img/nail.png), url(../img/nail.png), url(../img/nail.png), url(../img/nail.png);
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+	background-size: 5%, 5%, 5%, 5%;
+	background-position: top left, top right, bottom left, bottom right;
+	padding: 20px;
+	margin-bottom: 25px;
+	width: 100%;
+	font-weight: bold;
+	border: 3px groove #966F33;
+}
+
+.image{
+	padding: 3%;
+	background-color: white;
+	max-width: 45%;
+	border: solid 1px black;
+	float: left;
+	margin: 2.5%;
+	background-image: url(../img/pin.png);
+	background-size: 10%;
+	background-repeat: no-repeat;
+	background-position: top;
+	box-shadow: -2px 3px 3px;
+	overflow: hidden;
+}
+
+.image img{
+	max-width: 100%;
+	border: solid 1px black;
+	transition: transform 0.5s ease-in-out;
+}
+
+.image img:hover{
+	transform: scale(1.2,1.2);
+}
+
+h3{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+h4{
+	font-size: 1.25em;
+	text-align: center;
+}
+
+.calendar{
+	background-color: white;
+	border: solid 1px black;
+	box-shadow: -2px 3px 3px;
+	background-image: url(../img/pin.png), url(../img/pin.png);
+	background-size: 4%, 4%;
+	background-repeat: no-repeat, no-repeat;
+	background-position: top left, top right;
+	overflow: hidden;
+}
+
+.calendar img{
+	width: 100%;
+	display: block;
+	transition: transform 0.5s ease-in-out;
+	border: solid 1px black;
+
+}
+
+.calendar img:hover{
+	transform: scale(1.5, 1.5) translate(-350px, -200px);
+}
+
+.location iframe{
+	display: block;
+}
+
+.location{
+	background-color: white;
+	border: solid 1px black;
+	padding: 3%;
+	background-image: url(../img/pin.png), url(../img/pin.png);
+	background-size: 4%, 4%;
+	background-repeat: no-repeat, no-repeat;
+	background-position: top left, top right;
+	box-shadow: -2px 3px 3px;
+}
+
+.league{
+	background-color: white;
+	border: solid 1px black;
+	padding: 3%;
+	background-image: url(../img/pin2.png), url(../img/pin2.png), url(../img/pin2.png), url(../img/pin2.png);
+	background-size: 3%, 3%, 3%, 3%;
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+	background-position: top left, top right, bottom left, bottom right;
+	box-shadow: 0px 1.5px 0px;
+}
+
+.map{
+	border: solid 1px black;
+	position: relative;
+}
+
+.locationimage{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 5px;
+	width: 25%;
+	transition: width 1s, padding 1s;
+}
+
+.locationimage:hover{
+	width: 75%;
+	padding: 10px;
+}
+
+.location img{
+	width: 100%;
+	display: block;
+	box-shadow: -2px 3px 3px gray;
+
+}
+
+.league img{
+	width: 100%;
+	display: block;
+	border: solid 1px black;
+	filter: blur(1px);
+	transition: filter 0.5s ease-in-out;
+}
+
+.league img:hover{
+	filter: blur(0);
+}
+
+#schedule{
+	background-color: rgb(201, 227, 155);
+	padding: 20px;
+	margin-bottom: 25px;
+	width: 100%;
+	font-weight: bold;
+	border: 3px groove #966F33;
+	background-image: url(../img/nail.png), url(../img/nail.png), url(../img/nail.png), url(../img/nail.png);
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+	background-size: 5%, 5%, 5%, 5%;
+	background-position: top left, top right, bottom left, bottom right;
+}
+
+#speakers{
+	background-color: rgb(243, 121, 92);
+	padding: 40px;
+	margin-bottom: 25px;
+	width: 100%;
+	font-weight: bold;
+	border: 3px groove #966F33;
+	background-image: url(../img/nail.png), url(../img/nail.png), url(../img/nail.png), url(../img/nail.png);
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+	background-size: 5%, 5%, 5%, 5%;
+	background-position: top left, top right, bottom left, bottom right;
+	overflow: hidden;
+}
+
+.speaker{
+	display: flex;
+	border-top: 2px solid black;
+	padding-top: 20px;
+}
+
+.img{
+	padding: 1%;
+	width: 25%;
+	background-color: white;
+	border: 1px solid black;
+	margin-bottom: 20px;
+}
+
+.one, .two, .three, .four{
+	transition: transform 1s;
+}
+
+.one:hover, .three:hover{
+	transform: rotate(5deg);
+}
+
+.two:hover, .four:hover{
+	transform: rotate(-5deg);
+}
+
+.img img{
+	border: 1px solid black;
+	width: 100%;
+	height: 100%;
+}
+
+.text{
+	width: 75%;
+	padding: 20px;
+}
+
+.text p{
+	text-align: justify;
+}
+
+#register{
+	background-color: rgb(80, 201, 235);
+	padding: 40px;
+	margin-bottom: 25px;
+	width: 100%;
+	font-weight: bold;
+	border: 3px groove #966F33;
+	background-image: url(../img/nail.png), url(../img/nail.png), url(../img/nail.png), url(../img/nail.png);
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+	background-size: 5%, 5%, 5%, 5%;
+	background-position: top left, top right, bottom left, bottom right;
+}
+
+#register img{
+	width: 100%;
+	display: block;
+
+}
+
+.register1{
+	padding: 3%;
+	border: 1px solid black;
+	background-color: white;
+
+}
+
+.register1 iframe{
+	border: 1px solid black;
+	display: block;
+}

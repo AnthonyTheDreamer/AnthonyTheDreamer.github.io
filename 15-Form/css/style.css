@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background: url("../img/background.jpg")/* no-repeat center center fixed*/;
+	font-family: 'MedievalSharp', cursive;
+	margin: auto;
+	max-width: 1000px;
+	font-size: 1.25em;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=text], input[type=password], input[type=number], input[type=submit] {
+	width: 100%;
+	display: inline-block;
+	padding: 1%;
+	margin-bottom: 1%;
+	font-size: 1.25em;
+	background-color: rgba(255, 228, 176, 0);
+	border: 3px solid rgb(71, 42, 12);
+	font-family: 'MedievalSharp', cursive;
+	font-weight: bold;
+}
+
+input[type=submit]:hover {
+	color: red;
+}
+
+input[type=text]#firstname, input[type=text]#lastname {
+	width: 49%;
+	background-color: rgba(255, 228, 176, 0);
+}
+
+select {
+	width: 15%;
+	margin-bottom: 1%;
+	font-size: 1em;
+	font-family: 'MedievalSharp', cursive;
+	font-weight: bold;
+}
+
+option {
+	font-family: 'MedievalSharp', cursive;
+	font-weight: bold;
+}
+
+input[type=radio] {
+	margin-bottom: 1%;
+	margin-right: 1%;
+	cursor: pointer;
+}
+
+input[type=submit] {
+	cursor: pointer;
+	background-color: rgba(83, 48, 19, 0.25);
+	border: none;
+}
+
+label {
+	font-size: 1.25em;
+	margin-right: 1%;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+input[type=text]#firstname {
+	float: left;
+}
+
+input[type=text]#lastname {
+	float: right;
+}
+
+
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.body {
+	width: 1000px;
+	padding: 12%;
+	background-image: url("../img/paper.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: #383b3e;
+}
+
+span {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 1%;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#selectdate {
+	font-weight: bold;
+	font-size: 1.25em;
+	float: left;
+	margin-right: 2%;
+}
+
+a{
+	font-weight: bold;
+	color: #383b3e;
+}
+
+.inputerror::-webkit-input-placeholder {
+    color: #ac3235;
+
+}

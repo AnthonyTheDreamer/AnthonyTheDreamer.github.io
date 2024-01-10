@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Taiyaki</title>
+		<meta charset="utf-8"/>
+		<link rel="icon" type="image/png" href="img/icon.ico"/>
+		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/food
+		.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+<script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+			<style>
+			.slide {display:none}
+			.demo {cursor:pointer}
+			</style>
+	</head>
+	<body>
+		<div class="body">
+			<header-component></header-component>
+			<br /><br />
+			<div class="content">
+				<div class="foodpic">
+					<div class="bigpics">
+						<img class="slide" src="img/sweet/taiyaki/1.jpg" style="width:100%" alt="1" title="1">
+						<img class="slide" src="img/sweet/taiyaki/2.jpg" style="width:100%" alt="2" title="2">
+						<img class="slide" src="img/sweet/taiyaki/3.jpg" style="width:100%" alt="3" title="3">
+						<img class="slide" src="img/sweet/taiyaki/4.jpg" style="width:100%" alt="4" title="4">
+						<img class="slide" src="img/sweet/taiyaki/5.jpg" style="width:100%" alt="5" title="5">
+						<img class="slide" src="img/sweet/taiyaki/6.jpg" style="width:100%" alt="6" title="6">
+					</div>
+					<div class="smallpics">
+					    <div class="smallpic">
+					      <img class="demo opacity hover-opacity-off" src="img/sweet/taiyaki/1.jpg" style="width:100%;" onclick="currentDiv(1)" alt="1" title="1">
+					    </div>
+					    <div class="smallpic">
+					      <img class="demo opacity hover-opacity-off" src="img/sweet/taiyaki/2.jpg" style="width:100%;" onclick="currentDiv(2)" alt="2" title="2">
+					    </div>
+					    <div class="smallpic">
+					      <img class="demo opacity hover-opacity-off" src="img/sweet/taiyaki/3.jpg" style="width:100%;" onclick="currentDiv(3)" alt="3" title="3">
+					    </div>
+					    <div class="smallpic">
+					      <img class="demo opacity hover-opacity-off" src="img/sweet/taiyaki/4.jpg" style="width:100%;" onclick="currentDiv(4)" alt="4" title="4">
+					    </div>
+					    <div class="smallpic">
+					      <img class="demo opacity hover-opacity-off" src="img/sweet/taiyaki/5.jpg" style="width:100%;" onclick="currentDiv(5)" alt="5" title="5">
+					    </div>
+					    <div class="smallpic">
+					      <img class="demo opacity hover-opacity-off" src="img/sweet/taiyaki/6.jpg" style="width:100%;" onclick="currentDiv(6)" alt="6" title="6">
+					    </div>
+					</div>
+				</div>
+				
+
+					<script>
+					var slideIndex = 1;
+					showDivs(slideIndex);
+
+					function plusDivs(n) {
+					  showDivs(slideIndex += n);
+					}
+
+					function currentDiv(n) {
+					  showDivs(slideIndex = n);
+					}
+
+					function showDivs(n) {
+					  var i;
+					  var x = document.getElementsByClassName("slide");
+					  var dots = document.getElementsByClassName("demo");
+					  if (n > x.length) {slideIndex = 1}
+					  if (n < 1) {slideIndex = x.length}
+					  for (i = 0; i < x.length; i++) {
+					     x[i].style.display = "none";
+					  }
+					  for (i = 0; i < dots.length; i++) {
+					     dots[i].className = dots[i].className.replace(" opacity-off", "");
+					  }
+					  x[slideIndex-1].style.display = "block";
+					  dots[slideIndex-1].className += " opacity-off";
+					}
+					</script>
+				<div class="textcontent">
+					<h1>Taiyaki</h1><br/>
+					<p><b>Price: $2.50</b></p><br/>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="holder">
+				<img src="img/holder.png">				
+			</div>
+			<footer-component></footer-component>
+		</div>
+	</body>
+</html>

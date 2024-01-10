@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	/*background-image: url("../img/background3.png");*/
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url("../img/background2.jpg");
+	background-size: cover;
+
+	font-weight: bold;
+}
+
+header {
+	background-image: url("../img/background4.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+[class*='col-'] {
+  	background-image: url("../img/light1.png"), url("../img/background4.jpg");
+	background-repeat: no-repeat, no-repeat;
+	background-position: center, bottom;
+	background-size: cover, cover;
+	border: 5px solid rgb(245, 245, 245);
+}
+
+[class*='col-'] img {
+	display:block;
+  	margin:auto;
+  	padding: 5%;
+  	filter: brightness(10%);
+}
+
+[class*='col-'] img:hover, #top img:hover {
+	filter: brightness(100%);
+}
+
+#top img:active {
+	filter: brightness(150%);
+}
+
+.navbar {
+	margin-bottom: 0	
+}
+
+#top img{
+		max-width: 12%;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+	    transform: translateX(100%);	
+	   	/*right: -10%;*/
+		filter: brightness(10%);
+		transition: transform 0.5s ease-in-out;
+}
+
+#playpause {
+
+	filter: brightness(100%);
+}
+
+@media screen and (max-width: 1199px) {
+    body {
+       font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    body {
+       font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+       font-size: 20px;
+       text-align: center;
+    }
+    #top img{
+    	filter: brightness(100%);
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-fluid{
+        max-width: 1200px;
+    }
+}
+
+.navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+}
+
+.navbar-toggle {
+	float: none;
+	margin-right: 0;
+}
+
+/*
+#content{
+			width: 100%;
+			margin: auto;
+		}
+
+#imagecontent, #bannercontent, #logo, #menu{
+	max-width: 1000px;
+	margin: auto;
+}
+
+#header{
+		background-color: rgb(12, 12, 12);
+		height: 150px;
+		width: 100%;
+		background-image: url("../img/light2.png");
+		background-size: auto;
+		background-repeat: no-repeat;
+		background-position: center top;
+		border: 5px solid rgb(242, 242, 242);
+}
+
+#logo:hover{
+			filter: brightness(150%);
+}
+
+#logo:active{
+			filter: brightness(200%);
+}
+
+#logo img{
+		max-width: 110px;
+		float: left;
+		margin-top: 20px;
+		margin-bottom: 20px;
+}
+
+#banner img{
+			max-width: 100%;
+			float: left;
+			border: 5px solid rgb(242, 242, 242);
+}
+
+#menu a{
+		font-size: 1.5em;
+		text-decoration: none;
+		float: left;
+		margin-top: 50px;
+		margin-bottom: auto;
+		margin-left: 2vw;
+		color: rgb(242, 242, 242);
+		border: 5px solid rgb(242, 242, 242);
+		background-color: rgb(12, 12, 12);
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		filter: brightness(100%);
+}
+
+#menu a:hover{
+			filter: brightness(125%)
+
+}
+
+#menu a:active{
+			filter: brightness(150%);
+}
+
+#menu a#active{
+	filter: brightness(150%);
+}
+.image{
+		float: left;
+		height: 600px;
+		width: 33.33%;
+		border: 5px solid rgb(242, 242, 242);
+		background-color: rgb(12, 12, 12);
+		background-image: url("../img/light1.png"), url("../img/background2.png");
+		background-repeat: no-repeat, no-repeat;
+		background-position: center, bottom;
+		background-size: cover, cover;
+		position: relative;
+}
+
+.image img{
+	max-width: 300px;
+	max-height: 450px;
+	filter: brightness(10%);
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	bottom: 25px;
+	left: 0;
+	right: 0;
+	cursor: pointer
+}
+
+.image img:hover{
+					filter: brightness(100%);
+}
+
+.cursor{
+		cursor: pointer
+}*/

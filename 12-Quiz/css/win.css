@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background: url("../img/background1.jpg");
+	margin: auto;
+	font-family: 'MedievalSharp', cursive;
+	font-weight: bold;
+	width: 1000px;
+	color: #383b3e;
+}
+
+@font-face {
+  font-family: 'digital-7';
+  src: url('../font/digital-7.ttf');
+}
+
+.clear {
+	clear: both;
+}
+
+#doorclose {
+	position: relative;
+	
+}
+
+#doorclose img {
+	width: 100%;
+	position: absolute;
+	z-index: 0;
+	animation: dooropen 4s ease-in-out;
+	opacity: 0
+}
+
+#dooropen {
+	position: relative;
+}
+
+#dooropen img {
+	width: 100%;
+	position: absolute;
+	z-index: 0;
+}
+
+#dooropen h1 {
+	position: absolute;
+	font-size: 4em;
+    top: 735px;
+    left: 265px;
+    color: black;
+}
+
+#score {
+	position: relative;
+}
+
+@keyframes lock {
+	0% {visibility: visible; top: 450px;}
+	20% {filter: brightness(150%);}
+	40% {filter: brightness(100%); top: 450px;}
+	100% {top: 1051px;}
+}
+
+#score img{
+	position: absolute;
+	top: 450px;
+	left: 450px;
+	animation: lock 3s ease-in-out;
+	visibility: hidden;
+}
+
+@keyframes dooropen {
+	0%, 50% {opacity: 1;}
+	100% {opacity: 0;}
+}

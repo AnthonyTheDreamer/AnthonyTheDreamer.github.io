@@ -1,0 +1,441 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	background: url("../img/background.jpeg") no-repeat center bottom fixed;
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.menu {
+	background: url("../img/menu.jpg");
+}
+
+.menucontent{
+	width: 1000px;
+	margin: auto;
+	position: relative;
+}
+
+.logo{
+	width: 20%;
+	float: left;
+	padding: 2%;
+}
+
+.logo img{
+	width: 100%;
+	display: block;
+	border-radius: 50%;
+	border: 10px solid #382410
+}
+
+.logo:hover{
+	padding: 1%;
+}
+
+.logo:active{
+	filter: brightness(125%);
+}
+
+.clear{
+	clear:both;
+}
+
+.menus{
+	width: 80%;
+	float: left;
+}
+
+ul.menulist{
+	width: 100%;
+	padding-top: 80px;
+
+}
+
+li.menulist{
+	width: 23%;
+	margin-left: 1%;
+	margin-right: 1%;
+	background-image: url(../img/scroll2.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.menulist a{
+	font-size: 1.5em;
+	color: #383b3e;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.menulist a:hover{
+	color: #ed2939;
+}
+
+ul, li{
+	list-style-type: none;
+	text-align: center;
+}
+
+li.menulist{
+	float: left;
+}
+
+li a{
+	display: block;
+	padding: 10px;
+}
+
+li.foodmenu{
+	position: relative;
+}
+
+ul.foodcontent{
+	position: absolute;
+	width: 184px;
+	background-image: url(../img/scroll3.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0;
+  	visibility: hidden;
+  	transition: opacity 0.5s, visibility 0.5s, transform 0.75s;
+  	z-index: 1;
+  	transform: translateY(-10px);
+}
+
+.foodcontent a{
+	display: block;
+	font-size: 1.25em;
+	padding-top: 13px;
+    padding-bottom: 13px;
+    color: #383b3e;
+}
+
+li.foodmenu:hover ul.foodcontent{
+	visibility: visible;
+  	opacity: 1;
+  	transform: translateY(0);
+}
+
+.footer{
+	background-image: url(../img/footer.jpg);
+	border-top: 10px groove rgb(87, 56, 53);
+
+}
+
+.footercontent{
+	width: 1000px;
+	margin: auto;
+	position: relative;
+	padding: 10px;
+	color: #deb887;
+}
+
+h2{
+	font-size: 2em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.footertext p{
+	font-size: 1.25em;
+	padding-top: 1%;
+}
+
+.footertext p:hover, .footertext h2:hover{
+	filter: brightness(125%);
+	cursor: default;
+}
+
+.map{
+	float: right;
+	border: 8px inset #deb887;
+}
+
+.map iframe{
+	display: block;
+}
+
+.content{
+	width: 1000px;
+	margin: auto;
+	background-color: #e6dfd3;
+	border: 10px ridge #8b5a2b;
+	padding: 2%;
+}
+
+h1{
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	color: #383b3e;
+}
+
+.content p{
+	font-size: 1.5em;
+	text-align: justify;
+	color: #383b3e;
+}
+
+.holder{
+	width: 1000px;
+	margin: auto;
+}
+
+.holder img{
+	display: block;
+	margin: auto;
+}
+
+#specialcontent{
+	width: 1000px;
+	margin: auto;
+	height: auto;
+}
+
+.special1{
+	width: 60%;
+	background: url(../img/board4.png);
+	background-repeat: no-repeat;
+	background-size: 120% 160%;
+	background-position: center bottom;
+	float: left;
+	position: relative;
+}
+
+.specialfood1{
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-top: 17%;
+	padding-bottom: 5%;
+}
+
+.salefifty{
+	width: 20%;
+	position: absolute;
+	bottom: 35px;
+	left: 55px;
+}
+
+.salefifty img{
+	width: 100%;
+}
+
+.specialfood1 img{
+	width: 100%;
+	border: 3px inset brown;
+	display: block;
+	filter: sepia(0.25);
+	transition: filter 0.2s ease-in-out;
+}
+
+.special2{
+	width: 38%;
+	float: right;
+	background: url(../img/board4.png);
+	background-repeat: no-repeat;
+	background-size: 120% 160%;
+	background-position: center bottom;
+	position: relative;
+}
+
+.specialfood2{
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-top: 18%;
+	padding-bottom: 4%;
+}
+
+.specialfood2 img{
+	width: 100%;
+	border: 3px inset brown;
+	display: block;
+	filter: sepia(0.25);
+	transition: filter 0.2s ease-in-out;
+}
+
+.salefifteen{
+	width: 30%;
+	position: absolute;
+	bottom: 20px;
+	right: 35px;
+}
+
+.salefifteen img{
+	width: 100%;
+}
+
+.special3{
+	width: 35%;
+	float: right;
+	margin-right: 2%;
+	background: url(../img/board4.png);
+	background-repeat: no-repeat;
+	background-size: 120% 140%;
+	background-position: center bottom;
+	position: relative;
+}
+
+.specialfood3{
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-top: 30%;
+	padding-bottom: 4%;
+}
+
+.specialfood3 img{
+	width: 100%;
+	border: 3px inset brown;
+	display: block;
+	filter: sepia(0.25);
+	transition: filter 0.2s ease-in-out;
+}
+
+.saleten{
+	width: 30%;
+	position: absolute;
+	bottom: 20px;
+	right: 35px;
+}
+
+.saleten img{
+	width: 100%;
+}
+
+.special4{
+	width: 22%;
+	float: left;
+	background: url(../img/board4.png);
+	background-repeat: no-repeat;
+	background-size: 120% 160%;
+	background-position: center bottom;
+	margin-left: 3%;
+	position: relative;
+}
+
+.specialfood4{
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-top: 20%;
+	padding-bottom: 5%;
+}
+
+.specialfood4 img{
+	width: 100%;
+	border: 3px inset brown;
+	display: block;
+	filter: sepia(0.25);
+	transition: filter 0.2s ease-in-out;
+}
+
+.salefive{
+	width: 25%;
+	position: absolute;
+	bottom: 12px;
+	left: 20px;
+}
+
+.salefive img{
+	width: 100%;
+}
+
+.special5{
+	width: 28%;
+	float: left;
+	margin-left: 4%;
+	background: url(../img/board4.png);
+	background-repeat: no-repeat;
+	background-size: 120% 160%;
+	background-position: center bottom;
+	position: relative;
+}
+
+.specialfood5{
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-top: 17%;
+	padding-bottom: 4%;
+}
+
+.specialfood5 img{
+	width: 100%;
+	border: 3px inset brown;
+	display: block;
+	filter: sepia(0.25);
+	transition: filter 0.2s ease-in-out;
+}
+
+.salefree{
+	width: 25%;
+	position: absolute;
+	bottom: 12px;
+	right: 26px;
+}
+
+.salefree img{
+	width: 100%;
+}
+
+.specialfood1 img:hover, 
+.specialfood2 img:hover, 
+.specialfood3 img:hover, 
+.specialfood4 img:hover, 
+.specialfood5 img:hover{
+	filter: sepia(0);
+}
+
+.specialfood1 img:active, 
+.specialfood2 img:active, 
+.specialfood3 img:active, 
+.specialfood4 img:active, 
+.specialfood5 img:active{
+	filter: brightness(110%);
+}
+
+.ad{
+	background-image: url(../img/adbanner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 15%;
+    padding-bottom: 10%;
+}
+
+.adcontent{
+	width: 50%;
+	margin: auto;
+}
+
+.adcontent img{
+	display: block;
+	width: 48%;
+    opacity: 0.75;
+    margin-left: 1%;
+    margin-right: 1%;
+    border: 1px solid gray;
+    float: left;
+    transition: filter 0.1s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.adcontent img:hover{
+	opacity: 1;
+	filter: brightness(110%);
+}
+
+.adcontent img:active{
+	filter: brightness(125%);
+}

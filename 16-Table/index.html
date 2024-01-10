@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Vocaloid 4 Singers</title>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="img/icon.ico">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	</head>
+	<body>
+		<canvas id="canvas"></canvas>
+		<div class="wrap">
+			<h1>Vocaloid 4 Singers</h1>
+			<table id="table">
+				<thead>
+					<tr>
+						<th class="noselect" style="cursor:default; width: 15%;pointer-events: none;">Image</th>
+						<th class="noselect" onclick="sortTable(1)">Name <i class="fas fa-sort"></i></th>
+						<th class="noselect" onclick="sortTable(2)">Sex <i class="fas fa-sort"></i></th>
+						<th class="noselect" onclick="sortTable(3)">Developer <i class="fas fa-sort"></i></th>
+						<th class="noselect" onclick="sortTable(4)">Language <i class="fas fa-sort"></i></th>
+						<th class="noselect" onclick="sortTable(5)">Voice Sampled <i class="fas fa-sort"></i></th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+		<div class="audio">
+			<audio id="background" src="sound/background.mp3" type="audio/mpeg" loop crossorigin="anonymous"></audio>
+			<audio id="hover" src="sound/hover.mp3" type="audio/mpeg"></audio>
+			<audio id="click" src="sound/click.mp3" type="audio/mpeg"></audio>
+		</div>
+	</body>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</html>

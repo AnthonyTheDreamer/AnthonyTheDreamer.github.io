@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Register Form</title>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="img/icon.ico">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
+	</head>
+	<body>
+		<div class="body">
+			<span>Join the adventure.</span>
+			<form action="success.html" id="registerform">
+				<input type="text" id="firstname" name="firstname" placeholder="First name"/>
+				<input type="text" id="lastname" name="lastname" placeholder="Last name"/><br/>
+				<input type="text" id="email" name="email" placeholder="Email"/><br/>
+				<input type="text" id="facebook" name="facebook" placeholder='Facebook (Eg: https://www.facebook.com/youraccount)'/><br/>
+				<input type="password" id="password" name="password" placeholder="Password"/><br/>
+				<p id="selectdate">Date of birth:</p>
+				<select id="year" name="year"><option>Year</option></select>
+				<select id="month" name="month"><option>Month</option></select>
+				<select id="day" name="day"><option>Day</option></select><br/>
+				<input type="radio" name="gender" id="male" value="male" checked/><label for="male">Male</label>
+				<input type="radio" name="gender" id="female" value="female"/><label for="female">Female</label><br/>
+				<input type="text" id="address" name="address" placeholder="Address"/><br/>
+				<input type="text" id="number" name="number" placeholder="Phone number"/><br/>
+				<input type="submit" value="Sign Up" name="submit"/><br/>
+			</form>
+		</div>
+	</body>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/script.js"></script>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Arcana Memory Game</title>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="img/icon.ico">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class = "black"></div>
+		<div class = "wrap">
+			<div class = "start">
+				<h1>Arcana Memory Game</h1>
+				<h2>"I am thou... Thou art I...<br/>
+					Thou hast acquired thy life challenge<br/>
+					Thou shalt connect bonds of arcana<br/>
+					Thy fate then shalt be decided."</h2>
+				<div class = "difficulty"><p onclick="start(); easy()">Easy</p></div>
+				<div class = "difficulty"><p onclick="start(); medium()">Medium</p></div>
+				<div class = "difficulty"><p onclick="start(); hard()">Hard</p></div>
+			</div>
+			<div class = "times">
+				<progress id = "time" value="100" max="100"></progress>
+				<p class="timedetail">
+	   				<span id = "remains"></span>&nbsp;/&nbsp;<span id = "maxs"></span>
+	  			</p>
+			</div>
+			<div class = "body"></div>
+			<div class = "win" id = "easymode">
+				<p>"The bonds of arcana has been found. Congratulation.</p><br/>
+				<p>Going easy way is not foolish, it is the slow way of getting better."</p><br/>
+				<p>Thou shalt face the challenge again?</p><br/>
+				<img class = "again" src = "img/again.png" onclick = "again()">
+			</div>
+			<div class = "win" id = "mediummode">
+				<p>"Through thy life challenge there is</p><br/>
+				<p>The danger between life and death</p><br/>
+				<p>Howbeit thy bravery let thou see</p><br/>
+				<p>To what place called Answer of Life..."</p>
+				<br></br>
+				<p>Thou shalt face the challenge again?</p><br/>
+				<img class = "again" src = "img/again.png" onclick = "again()">
+			</div>
+			<div class = "win" id = "hardmode">
+				<p>"Thou hast found Answer of Life</p><br/>
+				<p>Thus journey hast came to end</p><br/>
+				<p>Through hardship then through life's challenge</p><br/>
+				<p>Thy sacrifice shalt not come blind..."</p>
+				<br></br>
+				<p>Thou shalt face the challenge again?</p><br/>
+				<img class = "again" src = "img/again.png" onclick = "again()">
+			</div>
+			<div class = "lose" id = "easy">
+				<p>"Life is truth, and never a dream... All souls know this from birth...</p><br/>
+				<p>The truth is something that is chosen and grasped...</p><br/>
+				<p>Something discovered with one's vision and will.</p><br/>
+				<p>Only by gaining that does the seeker become truth himself, a cord that connects past and future.</p><br/> 
+				<p>But now, our guest's destiny has been severed, and the truth languishes with the hollow, fog-filled forest..."</p>
+				<br></br>
+				<p>Thou shalt find the destiny again?</p><br/>
+				<img class = "again" src = "img/again.png" onclick = "again()">
+			</div><br/>
+			<div class = "lose" id = "medium">
+				<p>"Death is not a hunter unbeknowst to its prey.</p><br/> 
+				<p>One is always aware that it lies in wait.</p><br/> 
+				<p>Though life is merely a journey to the grave, it must not be undertaken without hope.</p><br/>
+				<p>Only then will a traveler's story live on, treasured by those who bid him farewell.</p><br/>
+				<p>But alas, my guest's life has now ended, his tale left unwritten..."</p>
+				<br></br>
+				<p>Thou shalt find the destiny again?</p><br/>
+				<img class = "again" src = "img/again.png" onclick = "again()">
+			</div><br/>
+			<div class = "lose" id = "hard">
+				<p>"As proof of one's life, there exists the danger of death.</p><br/>
+				<p>This proof exists as a flame, painfully burning one's life away.</p><br/>
+				<p>Yet though a life crumbles to dust, time moves ever onward.</p><br/>
+				<p>He who had been your proof, your life itself...</p><br/>
+				<p>The answer has been lost, never to be found again..."</p>
+				<br></br>
+				<p>Thou shalt find the destiny again?</p><br/>
+				<img class = "again" src = "img/again.png" onclick = "again()">
+			</div>
+		</div>
+		<div class = "video">
+			<video id="openvideo" src="video/video.mp4" type="video/mp4"></video>
+		</div>
+		<audio id="menuselect" src="sound/menuselect.mp3" type="audio/mpeg"></audio>
+		<audio id="menuhover" src="sound/menuhover.mp3" type="audio/mpeg"></audio>
+		<audio id="hoveraudio" src="sound/hover.mp3" type="audio/mpeg"></audio>
+		<audio id="clickaudio" src="sound/click.mp3" type="audio/mpeg"></audio>
+		<audio id="wrongaudio" src="sound/wrong2.mp3" type="audio/mpeg"></audio>
+		<audio id="correctaudio" src="sound/correct.mp3" type="audio/mpeg"></audio>
+		<audio id="losesound" src="sound/losesound.mp3" type="audio/mpeg"></audio>
+		<audio id="gameover" src="sound/gameover.mp3" type="audio/mpeg"></audio>
+		<audio id="background" src="sound/background.mp3" type="audio/mpeg" autoplay loop></audio>
+		<audio id="backgroundeasy" src="sound/backgroundeasy.mp3" type="audio/mpeg"></audio>
+		<audio id="backgroundmedium" src="sound/backgroundmedium.mp3" type="audio/mpeg"></audio>
+		<audio id="wineasy" src="sound/wineasy.mp3" type="audio/mpeg"></audio>
+		<audio id="winmedium" src="sound/winmedium.mp3" type="audio/mpeg"></audio>
+		<audio id="winhard" src="sound/winhard.mp3" type="audio/mpeg"></audio>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

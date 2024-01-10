@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+	background: url("../img/background.jpg");
+	background-size: cover;
+	margin: 0;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes headline {
+	0% {color: white; background-color: red;}
+	25% {color: black; background-color: black;}		
+	50% {color: white; background-color: blue;}
+	75% {color: black; background-color: black;}	
+	100% {color: white; background-color: red;}
+}
+
+h1{
+	margin: auto;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 4em;
+	animation: headline 10s ease-in-out infinite;
+}
+
+@keyframes author {
+	0% {color: blue; opacity: 0; transform: translateX(0px);}
+	10%{opacity: 0.5;}
+	20% {color: red; opacity: 1; transform: translateX(100px);}
+	40% {color: blue;}
+	60% {color: red;}
+	80% {color: blue; opacity: 1; transform: translateX(200px);}
+	90% {opacity: 0.5;}
+	100% {color: red; opacity: 0; transform: translateX(750px);}
+}
+
+#author{
+	max-width: 1000px;
+	margin: auto;
+}
+
+h2{
+	font-size: 1.5em;
+	font-weight: bold;
+	display: inline-block;
+	animation: author 5s ease-in-out infinite;
+	color: rgb(66, 50, 41);
+}
+
+
+#body{
+	position: relative;
+}
+
+#imagecontent{
+	max-width: 1000px;
+	margin: auto;
+}
+
+.row{
+	height: 430px;
+}
+
+.image{
+	width: 25%;
+	float: left;
+	margin-top: 50px;
+	padding: 10px;
+	background-color: none;
+}
+
+.img{
+	height: 300px;
+	border: 2px solid rgb(66, 50, 41);
+	transition: all 0.5s ease-in-out;
+	background-color: white;
+	overflow: hidden;
+	position: relative;
+}
+
+.img1{
+	height: 300px;
+	overflow: hidden;
+}
+
+.text{
+	position: absolute;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.img img{
+	width: 100%;
+	height: 300px;
+	filter: sepia(50%);
+	transition: all 0.5s ease-in-out;
+
+}
+
+.unknown{
+	overflow: hidden;
+}
+
+img.unknown:hover{
+	filter: sepia(0);
+	transform: scale(1.25) translateY(25px);
+}
+
+img.dead:hover{
+	filter: sepia(0) grayscale(100%) blur(1px);
+}
+
+.img:hover{
+	height: 360px;
+	transform: translate(-5px, -10px);
+	box-shadow: 5px 10px 5px 0px rgb(52, 35, 26);
+}

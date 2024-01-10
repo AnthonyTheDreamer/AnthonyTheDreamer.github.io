@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background: url("../img/background.jpeg") no-repeat center center fixed;
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 1000px;
+}
+
+@font-face {
+  font-family: 'digital-7';
+  src: url('../font/digital-7.ttf');
+}
+
+.clear{
+	clear: both;
+}
+
+.body{
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	background-color: rgb(209, 210, 214);
+	border: 3px groove rgb(81, 79, 84);
+	border-top-right-radius: 5%;
+	border-top-left-radius: 5%;
+	border-bottom-left-radius: 10%;
+	border-bottom-right-radius: 10%;
+	box-shadow: 0px 2px 2px black;
+}
+
+p.head{
+	font-family: Arial Black;
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	padding: 2%;
+	color: rgb(24, 15, 11);
+}
+
+.screen {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.screenborder {
+	border-left: 25px ridge rgb(88, 92, 101);
+	border-right: 25px groove rgb(88, 92, 101);
+	border-top: 10px ridge rgb(88, 92, 101);
+	border-bottom: 20px groove rgb(88, 92, 101);
+	border-top-left-radius: 3%;
+	border-top-right-radius: 3%;
+	border-bottom-left-radius: 10%;
+	border-bottom-right-radius: 10%;
+}
+
+.display{
+	width: 100%;
+	background-color: rgb(210, 224, 225);
+	border: none;
+}
+
+.display:focus {outline:0;}
+
+#math{
+	height: 2em;
+	font-size: 1.75em;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-family: 'digital-7';
+	font-weight: bold;
+	letter-spacing: 0.2em;
+}
+
+#result{
+	height: 2em;
+	font-size: 2em;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-family: 'digital-7';
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	text-align: right;
+}
+
+.buttons{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 10%;
+	padding-right: 10%;	
+}
+
+.key {
+	width: 65px;
+	height: 65px;
+	margin: 5px;
+	color: rgb(241, 245, 249);
+	background-color: rgb(49, 52, 59);
+	border-top-right-radius: 10%;
+	border-top-left-radius: 10%;
+	border-bottom-left-radius: 15%;
+	border-bottom-right-radius: 15%;
+	border: 0px solid black;
+	font-size: 1.5em;
+	box-shadow: 0px 3px 2px black;
+}
+
+.key:active {
+	box-shadow: 0px 0px 0px black;
+	border: 2px solid black;
+}
+
+.key:focus {outline:0;}
+
+#CE {
+	background-color: rgb(154, 86, 104);
+}
